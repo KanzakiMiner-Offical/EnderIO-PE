@@ -70,16 +70,15 @@ MachineRegistry.registerGenerator(BlockID.stirlingGen, {
 		}
 		return 0;
 	},
-/*
+
   resetValues: function(){
-		this.data.power_tier = this.defaultValues.power_tier;
-		this.data.energy_storage = this.defaultValues.energy_storage;
-		this.data.energy_consumption = this.defaultValues.energy_consumption;
-		this.data.work_time = this.defaultValues.work_time;
+
+		//this.data.energy_storage = 100000
+		this.data.bonus = this.oldValues.bonus;
 	},
-	*/
+	
 	tick: function(){
-		//this.resetValues();
+		this.resetValues();
 		UpgradeAPI.executeUpgrades(this);
 		  let slotCapacitor = this.container.getSlot("capacitorSlot");
 		for(let i in capacitorObj){

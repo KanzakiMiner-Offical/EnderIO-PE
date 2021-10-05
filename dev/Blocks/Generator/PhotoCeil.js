@@ -27,20 +27,19 @@ MachineRegistry.registerGenerator(BlockID.photovoltaicCell, {
       this.data.canSeeSky = GenerationUtils.canSeeSky(this.x, this.y + 1, this.z);
     }
     if (this.data.canSeeSky && World.getLightLevel(this.x, this.y + 1, this.z) == 15) {
-      this.data.energy += 10;
+      this.data.energy += 40;
     }
   },
 
   getEnergyStorage: function() {
-    return 100;
+    return 80;
   },
 
-  energyTick: function(type, src) {
-    if (this.data.energy) {
-      src.add(10);
-      this.data.energy = 0;
-    }
-  }
+  energyTick: function(type, src){
+		var output = Math.min(40, this.data.energy);
+		this.data.energy += src.add(output) - output;
+	},
+	
 });
 
 
@@ -73,17 +72,17 @@ MachineRegistry.registerGenerator(BlockID.photovoltaicCell, {
       this.data.canSeeSky = GenerationUtils.canSeeSky(this.x, this.y + 1, this.z);
     }
     if (this.data.canSeeSky && World.getLightLevel(this.x, this.y + 1, this.z) == 15) {
-      this.data.energy += 40;
+      this.data.energy += 80;
     }
   },
 
   getEnergyStorage: function() {
-    return 400;
+    return 160;
   },
 
   energyTick: function(type, src) {
     if (this.data.energy) {
-      src.add(40);
+      src.add(80);
       this.data.energy = 0;
     }
   }
@@ -120,7 +119,7 @@ MachineRegistry.registerGenerator(BlockID.photovoltaicCell, {
   },
 
   getEnergyStorage: function() {
-    return 1600;
+    return 320;
   },
 
   energyTick: function(type, src) {
