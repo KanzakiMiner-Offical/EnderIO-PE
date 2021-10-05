@@ -1,9 +1,9 @@
 var RecipeRegistry = {
-  crusher: {},
-  smelter: {},
-  sliceAndSlice: {},
-  theVat: {},
-  soulBinder: {},
+  crusher: [],
+  smelter: [],
+  sliceAndSlice: [],
+  theVat: [],
+  soulBinder: [],
 
   addSmelter: function(obj) {
     this.smelter.push(obj);

@@ -3,6 +3,7 @@ var GUI_SCALE = 3.2;
 var GUI_ENER = 0.6;
 // API Machine
 var RF = EnergyTypeRegistry.assureEnergyType("RF", 0.25);
+var EU = EnergyTypeRegistry.assureEnergyType("Eu", 1);
 
 var MachineRegistry = {
   machineIDs: {},
