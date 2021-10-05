@@ -71,8 +71,8 @@ var RecipeRegistry = {
           output1: { type: "slot", x: 570, y: 340, size: 65 },
           output2: { type: "slot", x: 635, y: 340, size: 65 },
           output3: { type: "slot", x: 700, y: 340, size: 65 },
-          textChange0: { type: "text", x: 635, y: 300 },
-          textChange1: { type: "text", x: 700, y: 300 },
+          textChance0: { type: "text", x: 635, y: 300 },
+          textChance1: { type: "text", x: 700, y: 300 },
           textTime: { type: "text", x: 700, y: 200 }
         }
       },
@@ -96,9 +96,9 @@ var RecipeRegistry = {
                   { id: result2.id || 0, count: 1, data: result2.data || 0 },
                   { id: result3.id || 0, count: 1, data: result3.data || 0 },
 					],
-                change: [
-                  { change: result2.change },
-                  { change: result3.change },
+                chance: [
+                  { chance: result2.chance },
+                  { chance: result3.chance },
                   ]
               });
             }
@@ -107,11 +107,11 @@ var RecipeRegistry = {
         }
       },
       onOpen: function(elements, data) {
-        let elem = elements.get("textChange0");
-        elem.onBindingUpdated("text", data ? Translation.translate("Change: ") + data.change[0].change : "");
+        let elem = elements.get("textChance0");
+        elem.onBindingUpdated("text", data ? Translation.translate("chance: ") + data.chance[0].chance : "");
 
-        let elem2 = elements.get("textChange1");
-        elem2.onBindingUpdated("text", data ? Translation.translate("Change: ") + data.change[1].change : "");
+        let elem2 = elements.get("textChance1");
+        elem2.onBindingUpdated("text", data ? Translation.translate("chance: ") + data.chance[1].chance : "");
       }
 
     });

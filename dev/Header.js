@@ -15,13 +15,13 @@ alert("EnderIO BE \n Remake By KanzakiMiner");
 
 IMPORT("StorageInterface");
 IMPORT("flags");
-IMPORT("ToolType");
+//IMPORT("ToolType");
 IMPORT("EnergyNet");
 IMPORT("ChargeItem");
 IMPORT("MachineRender");
 IMPORT("TileRender");
 IMPORT("LiquidLib");
 IMPORT("ToolLib");
-IMPORT("PipeAPI");
+IMPORT("PipesAPI");
 IMPORT("bakeModel");
 IMPORT("Pipe");

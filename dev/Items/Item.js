@@ -3,7 +3,7 @@ Item.setItems = function(id, types) {
     IDRegistry.genItemID(id + types[i]);
     Item.createItem(id + types[i], types[i] + " " + id, { name: id + types[i] }, { stack: 64 });
     var this_id = id +types[i];
-    mod_tip(ItemId[this_id])
+    mod_tip(ItemID[this_id])
   }
 }
 
@@ -84,7 +84,7 @@ Item.createItem("doublelayerCapacitor", "Double-layer Capacitor", { name: "doubl
 
 IDRegistry.genItemID("octadicCapacitor");
 Item.createItem("octadicCapacitor", "Octadic Capacitor", { name: "octadicCapacitor" }, { stack: 64 });
-var capacitorObj = {};
+//var capacitorObj = {};
 function regUpgrade(id, type, storage, usage, speed, bonus) {
   UpgradeAPI.registerUpgrade(id, type, function(item, machine, container, data) {
     data.energy_storage += storage;
@@ -93,7 +93,7 @@ function regUpgrade(id, type, storage, usage, speed, bonus) {
     data.bonus += bonus;
   });
   
-  capacitorObj.push(id);
+  //capacitorObj.push(id);
 }
 regUpgrade(ItemID.basicCapacitor, "capacitor", 100000, 40, 1.15, 1);
 regUpgrade(ItemID.doublelayerCapacitor, "capacitor", 200000, 80, 2, 2);

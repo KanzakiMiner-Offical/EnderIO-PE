@@ -1,7 +1,9 @@
 Header.js
-Shared.js
-ModInfo.js
-Blocks/.
+
 core/.
 Items/.
+Blocks/.
 Integration/.
+
+ModInfo.js
+Shared.js

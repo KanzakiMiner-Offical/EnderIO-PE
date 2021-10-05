@@ -161,54 +161,62 @@ Recipes.addShaped({ id: BlockID.sagmill, count: 1, data: 0 }, [
 RecipeRegistry.addCrusher({
   ingridient: { id: BlockID.oreAluminum, data: 0 },
   result0: { id: ItemID.dustAluminum, data: 0, chance: 1 },
-  result1: { id: ItemID.dustAluminum, data: 0, change: 1 },
-  result2: { id: 0, data: 0, change: 0 },
-  result3: { id: 4, data: 0, change: 0.15 },
+  result1: { id: ItemID.dustAluminum, data: 0, chance: 1 },
+  result2: { id: 0, data: 0, chance: 0 },
+  result3: { id: 4, data: 0, chance: 0.15 },
   time: 180
 });
 
 RecipeRegistry.addCrusher({
   ingridient: { id: 49, data: 0 },
   result0: { id: ItemID.dustObsidian, data: 0, chance: 1 },
-  result1: { id: ItemID.dustObsidian, data: 0, change: 1 },
-  result2: { id: ItemID.dustObsidian, data: 0, change: 1 },
-  result3: { id: ItemID.dustObsidian, data: 0, change: 1 },
+  result1: { id: ItemID.dustObsidian, data: 0, chance: 1 },
+  result2: { id: ItemID.dustObsidian, data: 0, chance: 1 },
+  result3: { id: ItemID.dustObsidian, data: 0, chance: 1 },
   time: 200
 });
 
 RecipeRegistry.addCrusher({
   ingridient: { id: 14, data: 0 },
   result0: { id: ItemID.dustGold, data: 0, chance: 1 },
-  result1: { id: ItemID.dustGold, data: 0, change: 1 },
-  result2: { id: 0, data: 0, change: 1 },
-  result3: { id: ItemID.dustCopper, data: 0, change: 0.2 },
+  result1: { id: ItemID.dustGold, data: 0, chance: 1 },
+  result2: { id: 0, data: 0, chance: 1 },
+  result3: { id: ItemID.dustCopper, data: 0, chance: 0.2 },
   time: 180
 });
 
 RecipeRegistry.addCrusher({
   ingridient: { id: 15, data: 0 },
   result0: { id: ItemID.dustIron, data: 0, chance: 1 },
-  result1: { id: ItemID.dustIron, data: 0, change: 1 },
-  result2: { id: ItemID.dustTin, data: 0, change: 0.05 },
-  result3: { id: ItemID.dustNickel, data: 0, change: 1 },
+  result1: { id: ItemID.dustIron, data: 0, chance: 1 },
+  result2: { id: ItemID.dustTin, data: 0, chance: 0.05 },
+  result3: { id: ItemID.dustNickel, data: 0, chance: 1 },
   time: 180
 });
 
 RecipeRegistry.addCrusher({
   ingridient: { id: 16, data: 0 },
   result0: { id: 263, data: 0, chance: 1 },
-  result1: { id: 263, data: 0, change: 1 },
-  result2: { id: 264, data: 0, change: 0.001 },
-  result3: { id: ItemID.dustCoal, data: 0, change: 0.6 },
+  result1: { id: 263, data: 0, chance: 1 },
+  result2: { id: 264, data: 0, chance: 0.001 },
+  result3: { id: ItemID.dustCoal, data: 0, chance: 0.6 },
   time: 180
 });
 
 RecipeRegistry.addCrusher({
   ingridient: { id: 14, data: 0 },
   result0: { id: ItemID.silicon, data: 0, chance: 0.5 },
-  result1: { id: 0, data: 0, change: 1 },
-  result2: { id: 0, data: 0, change: 1 },
-  result3: { id: 0, data: 0, change: 1 },
+  result1: { id: 0, data: 0, chance: 1 },
+  result2: { id: 0, data: 0, chance: 1 },
+  result3: { id: 0, data: 0, chance: 1 },
   time: 80
 });
 
+RecipeRegistry.addCrusher({
+  ingridient: { id: 4, data: 0 },
+  result0: { id: 13, data: 0, chance: 0.7 },
+  result1: { id: 13, data: 0, chance: 0.3 },
+  result2: { id: 12, data: 0, chance: 0.1 },
+  result3: { id: 318, data: 0, chance: 0.05 },
+  time: 180
+});
